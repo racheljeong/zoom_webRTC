@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title MYWORLD
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="../public/app.css")
+    body
+    header 
+        h1 MYWORLD
+    main
+        div#welcome
+            h3 Open Rooms:
+            form
+                input(type="text", placeholder="Room name", required)
+                button Enter Room
+            ul
+        div#room
+            h3
+            div#myStream
+                video#myFace(autoplay,playsinline,width="350",height="350")
+                video#peersFace(autoplay,playsinline,width="350",height="350")
+                select#cameras 
+                button#mute Mute
+                button#camera Camera off
+            form#nickname
+                input(type="text", placeholder="Nickname", required)
+                button Save
+            form#msg
+                ul
+                input(type="text", placeholder="Message", required)
+                button Send
+        script(src="/socket.io/socket.io.js")  
+        script(src="/public/js/app.js")

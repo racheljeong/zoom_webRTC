@@ -1,0 +1,47 @@
+
+:root {
+    --primary: #e1efee; 
+    --tint: #f6f2d4;
+    --color: #f6f2d4;
+  }
+
+  body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--primary);
+  }
+  
+  h1 {
+    color: darkorange;
+  }
+  form {
+    background: #dde0e3;
+    border: 50px;
+  }
+
+  button {
+    background: #fdab2f;
+    float: left;
+    padding: 5px;
+    width: fit-content;
+
+  }
+
+  #myStream{
+    float: left;
+  }
+  
+
+  li {
+    list-style: none;
+  }
+
+  #msg {
+    float: left;
+    width: 700px;
+  }
+
+
+  
